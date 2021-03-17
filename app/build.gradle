@@ -7,7 +7,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "org.plavelo.androiddevchallenge"
+        applicationId "org.plavelo.weather"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
