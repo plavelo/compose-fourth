@@ -21,11 +21,14 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        maven {
+            url "https://kotlin.bintray.com/kotlinx"
+        }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.0-alpha09'
+        classpath 'com.android.tools.build:gradle:7.0.0-alpha10'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -37,7 +40,10 @@ plugins {
 subprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        maven {
+            url "https://kotlin.bintray.com/kotlinx"
+        }
     }
 
     apply plugin: 'com.diffplug.spotless'
